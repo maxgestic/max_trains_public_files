@@ -3,8 +3,8 @@ Config = {}
 Config.Debug = false
 
 Config.Models = { -- for all of these make sure to add a seat table below
-	TrainEngines = {"streakcoaster"}, -- add any models for passanger train engines
-	TrainCarriges = {"streakcoasterc"}, -- add any models you want to use for passanger carriges
+	TrainEngines = {"streakcoaster", "freight"}, -- add any models for passanger train engines
+	TrainCarriges = {"streakcoasterc"}, -- add any models you want to use for passanger carriges (DO NOT ADD FREIGHT CARRIAGES)
 	Metros = {"metrotrain"} -- add any models for metro carriges
 }
 
@@ -41,10 +41,34 @@ Config.TrainLayouts = {
 		type = "passangerTrain",
 		spawnCoords = vector3(217.3837, -2509.7693, 6.4603),
 	},
+	["SmallFreight"] = {
+		name = "Small Freight Train",
+		description = "Small Freight Train with one engine and two carriages",
+		spawnID = 3,
+		models = {"freight","freightcar"},
+		type = "freightTrain",
+		spawnCoords = vector3(217.3837, -2509.7693, 6.4603),
+	},
+	["MediumFreight"] = {
+		name = "Medium Freight Train",
+		description = "Medium Freight Train with one engine and three carriages",
+		spawnID = 4,
+		models = {"freight","freightcar"},
+		type = "freightTrain",
+		spawnCoords = vector3(217.3837, -2509.7693, 6.4603),
+	},
+	["BigFreight"] = {
+		name = "Big Freight Train",
+		description = "Big Freight Train with one engine and four carriages",
+		spawnID = 5,
+		models = {"freight","freightcar"},
+		type = "freightTrain",
+		spawnCoords = vector3(217.3837, -2509.7693, 6.4603),
+	},
 	["SmallMetro"] = {
 		name = "Small Metro",
 		description = "Small Metro with a single 2-part carriage",
-		spawnID = 3,
+		spawnID = 6,
 		models = {"metrotrain"},
 		type = "metro",
 		spawnCoords = vector3(-898.7032, -2339.0503, -11.6807),
@@ -52,7 +76,7 @@ Config.TrainLayouts = {
 	["MediumMetro"] = {
 		name = "Medium Metro",
 		description = "Medium Metro with two 2-part carriages",
-		spawnID = 4,
+		spawnID = 7,
 		models = {"metrotrain"},
 		type = "metro",
 		spawnCoords = vector3(-898.7032, -2339.0503, -11.6807),
@@ -60,7 +84,7 @@ Config.TrainLayouts = {
 	["BigMetro"] = {
 		name = "Big Metro",
 		description = "Big Metro with three 2-part carriages",
-		spawnID = 5,
+		spawnID = 8,
 		models = {"metrotrain"},
 		type = "metro",
 		spawnCoords = vector3(-898.7032, -2339.0503, -11.6807),
