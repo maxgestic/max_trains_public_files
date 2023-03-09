@@ -155,7 +155,7 @@ Config.TurnstylesLocations = {
 	} -- Locations of turnstyles
 }
 
-Config.MetrostationCoords = {
+Config.MetrostationCoords = { -- Locations of Metro Stations
 	[1] = {coords = vector3(-1042.2565, -2745.7266, 15.9190)},
 	[2] = {coords = vector3(-946.0543, -2340.5015, 6.5338)},
 	[3] = {coords = vector3(-540.6730, -1282.5905, 33.4663)},
@@ -165,17 +165,26 @@ Config.MetrostationCoords = {
 	[7] = {coords = vector3(-1363.5077, -524.0391, 29.8416)},
 	[8] = {coords = vector3(-490.6987, -695.5313, 35.5731)},
 	[9] = {coords = vector3(-220.9811, -1036.7648, 34.3784)},
-	[10] = {coords = vector3(112.1726, -1723.6456, 33.1850)}, -- Locations of Metro Stations
+	[10] = {coords = vector3(112.1726, -1723.6456, 33.1850)},
 }
 
-Config.TrainstationCoords = {
+Config.TrainstationCoords = { -- Locations of Train Stations
 	[1] = {coords = vector3(655.3147, -1215.3457, 27.1136)},
 	[2] = {coords = vector3(2325.4028, 2676.2734, 48.2334)},
 	[3] = {coords = vector3(1768.6127, 3491.1086, 42.0864)},
 	[4] = {coords = vector3(-235.7802, 6037.5923, 37.3782)},
 	[5] = {coords = vector3(2886.9177, 4850.3159, 66.7778)},
 	[6] = {coords = vector3(2616.0828, 1679.5931, 29.3498)},
-	[7] = {coords = vector3(674.3034, -966.7263, 26.5136)}, -- Locations of Train Stations
+	[7] = {coords = vector3(674.3034, -966.7263, 26.5136)},
+}
+
+Config.FreightstationCoords = { -- Locations of Freight Stations
+	[1] = {coords = vector3(2198.7576, 1370.5172, 80.4136)},
+	[2] = {coords = vector3(-461.6186, 5302.9126, 85.1555)},
+	[3] = {coords = vector3(-103.9750, 6173.7231, 32.3536)},
+	[4] = {coords = vector3(3026.1238, 4252.7388, 61.0190)},
+	[5] = {coords = vector3(2625.2561, 2937.1685, 40.4228)},
+	[6] = {coords = vector3(2617.8208, 1660.0692, 27.6023)},
 }
 
 -- When a passanger gets in or out of a seat on a train the client side event "max_trains:setExportPassager" gets called with an argument that is either true or false depending if the person is sitting down or not, use this to disable emote's and such which will break stuff while sitting down on trains
