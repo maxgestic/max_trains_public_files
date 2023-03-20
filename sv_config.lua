@@ -34,7 +34,7 @@ Config.Functions = {
 
 		return steamid
 	end,
-	getJob = function(source, job)
+	getJob = function(source)
 		-- server side function to get players job
 		return internalJob
 	end,

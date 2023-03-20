@@ -1,6 +1,6 @@
 Config.UseCustomClientSync = false -- mostly for multi char things
 Config.CustomClientSyncEvent = "esx:playerLoaded" -- client side event that gets run when a character is loaded
-Config.PoliceJobName = "police" -- job name for police
+Config.AllowedJobNames = {"police"} -- Table of names of jobs that are allowed into metro without ticket
 Config.Functions = {
 	send911 = function(reason, coords)
 		-- Client Side function to trigger 911 calls
@@ -13,6 +13,21 @@ Config.Keys = { -- https://docs.fivem.net/docs/game-references/controls/
 		index = 47,
 		name = "INPUT_DETONATE",
 	}
+}
+
+Config.Menus = "ox_lib" -- NativeUI or ox_lib
+
+Config.UseOxTarget = true -- If false use 3dText for the clockin points, if true it will be a ox_target point
+Config.TargetPed = "ig_trafficwarden" -- If you use Ox Target you can specify the ped model of the clock in point here
+
+Config.Blips = {
+	trains = true,
+	metros = true,
+	trainStations = true,
+	frightStations = true,
+	metroStations = true,
+	trainClockIn = true,
+	metroClockIn = true
 }
 
 Config.MetroClockInCoords = vector3(-918.1724, -2345.6904, -3.5075) -- Location to clock in as Metro Driver
