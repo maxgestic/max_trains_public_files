@@ -11,6 +11,7 @@ escrow_ignore {
     'sh_config.lua',
     'cl_config.lua',
     'sv_config.lua',
+    'localisation.lua',
 }
 
 client_scripts { -- Uncomment the NativeUI lines if you use NativeUI in the config
@@ -41,6 +42,7 @@ client_scripts { -- Uncomment the NativeUI lines if you use NativeUI in the conf
     -- "@NativeUI/UIMenu/UIMenu.lua",
     -- "@NativeUI/UIMenu/MenuPool.lua",
     -- "@NativeUI/NativeUI.lua",
+    'localisation.lua',
     'sh_config.lua',
     'cl_config.lua',
     'client/utils/utils.lua',
@@ -48,6 +50,7 @@ client_scripts { -- Uncomment the NativeUI lines if you use NativeUI in the conf
 }
 
 server_scripts {
+    'localisation.lua',
     'sh_config.lua',
     'sv_config.lua',
     'server/utils/utils.lua',
