@@ -8,7 +8,7 @@ Config.TrainTicketCost = 100
 Config.MetroTicketCost = 50
 Config.CustomCheck = false -- if you want a server side custom check that permits clockin in
 Config.MapUpdateInterval = 1
-local internalJob = "civ"
+local internalJobTable = {} -- only for testing purposes server should not use as its main job system
 
 Config.Functions = {
 	getMoney = function(source)
@@ -36,11 +36,11 @@ Config.Functions = {
 	end,
 	getJob = function(source)
 		-- server side function to get players job
-		return internalJob
+		return internalJobTable[source]
 	end,
 	setJob = function(source, job)
 		-- server side function to set players job
-		internalJob = job
+		internalJobTable[source] = job
 	end,
 	checkNeededItem = function(source)
 		-- server side function to check players inventory

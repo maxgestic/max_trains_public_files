@@ -4,8 +4,8 @@ game 'gta5'
 lua54 'yes'
 
 author 'maxgestic'
-description 'Train & Metro System (Driver and Passanger)'
-version '1.0.5'
+description 'Train & Metro System'
+version '1.1.0'
 
 escrow_ignore {
     'sh_config.lua',
@@ -43,12 +43,14 @@ client_scripts { -- Uncomment the NativeUI lines if you use NativeUI in the conf
     -- "@NativeUI/NativeUI.lua",
     'sh_config.lua',
     'cl_config.lua',
+    'client/utils/utils.lua',
     'client/*.lua',
 }
 
 server_scripts {
     'sh_config.lua',
     'sv_config.lua',
+    'server/utils/utils.lua',
     'server/*.lua',
 }
 
