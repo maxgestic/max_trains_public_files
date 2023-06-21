@@ -10,8 +10,12 @@ Config.Models = { -- for all of these make sure to add a seat table below
 
 Config.TimeStoppedAtStation = 20 -- amount of seconds a driver has to be stopped at a station for before they can leave without being penalized
 Config.PayPerGoodStation = true -- if set to true the player will get payed an amount if they stay at a station for the required length as a bonus
-Config.PayPerGoodStationAmount = 350 -- amount of money the player will get payed
+Config.PayPerGoodStationAmountTrain = 350 -- amount of money the player will get payed for being a train driver
+Config.PayPerGoodStationAmountMetro = 350 -- amount of money the player will get payedfor being a metro driver
 Config.MaxStrikes = 3 -- Amount of strikes a player can get before getting sacked
+Config.MaxPassangerTrainsAllowed = 4 -- Amount of passanger trains that are allowed at once on the server
+Config.MaxFreightTrainsAllowed = 4 -- Amount of fright trains that are allowed at once on the server
+Config.MaxMetrosAllowed = 4 -- Amount of metros that are allowed at once on the server
 
 Config.TrainLayouts = {
 	-- ["TableKey"] = { -- Example Layout
@@ -162,4 +166,4 @@ Config.SeatTables = { -- Offsets for seat possitions from model, used to attach 
 	}
 }
 
-Config.MetroDoorIndexes = {0, 2}
+Config.MetroDoorIndexes = {0, 2} -- Which Doors to open with door control on metro

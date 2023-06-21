@@ -31,6 +31,37 @@ Config.Blips = {
 	metroClockIn = true
 }
 
+Config.BlipIcons = {
+	train = {
+		colour = 31,
+		sprite = 795
+	},
+	metro = {
+		colour = 41,
+		sprite = 795
+	},
+	metroStation = {
+		colour = 1,
+		sprite = 607
+	},
+	trainStation = {
+		colour = 31,
+		sprite = 677
+	},
+	freightStation = {
+		colour = 31,
+		sprite = 615
+	},
+	metroClockIn = {
+		colour = 61,
+		sprite = 78
+	},
+	trainClockIn = {
+		colour = 31,
+		sprite = 79
+	},
+}
+
 Config.NamedStationBlips = false -- true: Each blip will include the station name e.g. "LSIA Terminal 4 Metro Station" and will not be grouped, false: all station blips will be named e.g. "Metro Station and will be grouped"
 
 Config.EnableNPCPassangers = true -- enables NPCs that will spawn at stations and get on trains
