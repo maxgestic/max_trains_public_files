@@ -5,13 +5,14 @@ lua54 'yes'
 
 author 'maxgestic'
 description 'Train & Metro System'
-version '1.1.2'
+version '1.1.3'
 
 escrow_ignore {
     'sh_config.lua',
     'cl_config.lua',
     'sv_config.lua',
     'localisation.lua',
+    'client/custom/ui.lua'
 }
 
 client_scripts { -- Uncomment the NativeUI lines if you use NativeUI in the config
@@ -46,6 +47,7 @@ client_scripts { -- Uncomment the NativeUI lines if you use NativeUI in the conf
     'sh_config.lua',
     'cl_config.lua',
     'client/utils/utils.lua',
+    'client/custom/*.lua',
     'client/*.lua',
 }
 
@@ -63,4 +65,8 @@ replace_level_meta 'gta5'
  files {
  'gta5.meta',
  'trains.xml'
+}
+
+dependencies {
+    '/onesync',
 }
