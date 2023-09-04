@@ -66,6 +66,13 @@ Config.NamedStationBlips = false -- true: Each blip will include the station nam
 
 Config.EnableNPCPassangers = true -- enables NPCs that will spawn at stations and get on trains
 
+Config.UISettings = {
+	StationTxtLocation = {x = 1.33, y = 1.35, width = 1.0, height = 1.0, scale = 0.50},
+	SpeedNumberTxtLocation = {x = 0.663, y = 1.418, width = 1.0, height = 1.0, scale = 0.55},
+	SpeedUnitTxtLocation = {x = 0.684, y = 1.425, width = 1.0, height = 1.0, scale = 0.35},
+	NPCsBoardingTxtLocation = {x = 1.33, y = 1.3, width = 1.0, height = 1.0, scale = 0.50},
+}
+
 Config.MetroClockInCoords = vector3(-918.1724, -2345.6904, -3.5075) -- Location to clock in as Metro Driver
 Config.TrainClockInCoords = vector3(235.8775, -2506.5186, 6.4852) -- Location to clock in as Train Driver
 
