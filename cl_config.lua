@@ -16,6 +16,9 @@ Config.Keys = { -- https://docs.fivem.net/docs/game-references/controls/
 	}
 }
 
+Config.TrainMaxSpeed = 27.495 -- 27.495 is about 60 mph
+Config.MetroMaxSpeed = 27.495 -- 27.495 is about 60 mph
+
 Config.Menus = "ox_lib" -- NativeUI or ox_lib
 
 Config.UseOxTarget = true -- If false use 3dText for the clockin points, if true it will be a ox_target point

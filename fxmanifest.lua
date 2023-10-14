@@ -5,7 +5,7 @@ lua54 'yes'
 
 author 'maxgestic'
 description 'Train & Metro System'
-version '1.1.3'
+version '1.1.4'
 
 escrow_ignore {
     'sh_config.lua',
