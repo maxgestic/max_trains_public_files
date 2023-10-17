@@ -19,6 +19,9 @@ Config.Keys = { -- https://docs.fivem.net/docs/game-references/controls/
 Config.TrainMaxSpeed = 27.495 -- 27.495 is about 60 mph
 Config.MetroMaxSpeed = 27.495 -- 27.495 is about 60 mph
 
+Config.AccelerationRate = 0.1
+Config.DeccelerationRate = 0.1
+
 Config.Menus = "ox_lib" -- NativeUI or ox_lib
 
 Config.UseOxTarget = true -- If false use 3dText for the clockin points, if true it will be a ox_target point
@@ -77,7 +80,9 @@ Config.UISettings = {
 }
 
 Config.MetroClockInCoords = vector3(-918.1724, -2345.6904, -3.5075) -- Location to clock in as Metro Driver
+Config.MetroClockInPedHeading = 161.7380
 Config.TrainClockInCoords = vector3(235.8775, -2506.5186, 6.4852) -- Location to clock in as Train Driver
+Config.TrainClockInPedHeading = 0.4550
 
 Config.TicketMachineModels = { -- Models that count as ticket machines
 	'prop_train_ticket_02',
