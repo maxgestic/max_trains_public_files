@@ -2,6 +2,8 @@ Locale = {}
 
 Locale.MetroStation = "Metro Station"
 Locale.TrainStation = "Train Station"
+Locale.MetroClockIn = "Metro Clock In"
+Locale.TrainClockIn = "Train Clock In"
 Locale.FreightStation = "Freight Station"
 Locale.Horn = "Horn"
 Locale.OpenCloseDoors = "Open/Close Doors"
